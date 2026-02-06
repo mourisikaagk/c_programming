@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    if(a < b){
+        if(b < c){
+            printf("%d is the greatest",c);
+        }
+        else{
+            printf("%d is the greatest",b);
+        }
+    }else if(a > b) {
+        printf("%d is the greatest",a);
+    }
+    
+    if(a == b){
+        printf("There is a tie for the greatest number");
+    }else if(b == c){
+        printf("There is a tie for the greatest number");
+    }else if(a == c){
+        printf("There is a tie for the greatest number");
+    }
+    return 0;
+}
