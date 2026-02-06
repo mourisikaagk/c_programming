@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+     long a,b;
+    scanf("%ld",&a);
+    scanf("%ld",&b);
+    printf("Sum: %ld\n",a + b);
+    printf("Difference: %ld\n",a - b);
+    printf("Product: %ld\n",a * b);
+    printf("Quotient: %ld\n",a / b);
+    printf("Remainder: %ld\n",a % b);
+    return 0;
+}
