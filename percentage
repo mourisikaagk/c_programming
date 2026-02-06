@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int cost1,quantity1,cost2,quantity2,cost3,quantity3;
+    int budget;
+    float beftax,afttax;
+    scanf("%d%d",&cost1,&quantity1);
+      scanf("%d%d",&cost2,&quantity2);
+    scanf("%d%d",&cost3,&quantity3);
+    scanf("%d",&budget);
+    beftax = (cost1*quantity1) + (cost2*quantity2)+ (cost3*quantity3);
+    afttax = beftax + (beftax * 0.10);
+    printf("Total (Before Tax): %.2f\n",beftax);
+    printf("Total (After Tax): %.2f\n",afttax);
+    if(afttax <= budget){
+        printf("Within Budget");
+    }else{
+        printf("Over Budget");
+    }
+    return 0;
+}
